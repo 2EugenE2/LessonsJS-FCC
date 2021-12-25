@@ -1,1 +1,1 @@
-# lessonsFreeCodeCamps
+# lessonsJavaScript-FreeCodeCamps
