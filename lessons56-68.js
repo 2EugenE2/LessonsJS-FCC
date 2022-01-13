@@ -151,31 +151,84 @@ testGreaterOrEqual(10);
 //-----67---------------------------------------
 /** Додайте оператор "менше ніж" до вказаних рядків,
  *  щоб оператор повернення спрацював.*/
- function testLessThan(val) {
+function testLessThan(val) {
     if (val < 25) {  // Змініть цей рядок
-      return "Under 25";
+        return "Under 25";
     }
     if (val < 55) {  // Змініть цей рядок
-      return "Under 55";
+        return "Under 55";
     }
     return "55 or Over";
-  }
-  
-  testLessThan(10);
+}
+
+testLessThan(10);
 //-----68---------------------------------------
 /**Додайте оператор "менше або рівне до вказаних рядків,
  *  щоб оператор повернення спрацював. */
 
- function testLessOrEqual(val) {
+function testLessOrEqual(val) {
     if (val <= 12) {  // Змініть цей рядок
-      return "Smaller Than or Equal to 12";
+        return "Smaller Than or Equal to 12";
     }
     if (val <= 24) {  // Змініть цей рядок
-      return "Smaller Than or Equal to 24";
+        return "Smaller Than or Equal to 24";
     }
     return "More Than 24";
-  }
+}
+
+testLessOrEqual(10);
+//-----69---------------------------------------
+/** Замініть два оператора if statements одним використовуючи && оператор. 
+ * Значення рядка буде Yes, якщо val меньше або рівне 50 та більше або рівне 25. 
+ * В іншому випадку значення рядка стане No.*/
+
+function testLogicalAnd(val) {
+    // Змініть код лише під цим рядком
+    if (val <= 50 && val >= 25) {
+        return "Yes";
+    }
+    // Змініть код лише над цим рядком
+    return "No";
+}
+testLogicalAnd(10);
+
+//-----70---------------------------------------
+/**Combine the two if statements into one statement which returns the string 
+ * Outside if val is not between 10 and 20, inclusive. Otherwise, 
+ * return the string Inside. */
+
+function testLogicalOr(val) {
+    // Змініть код лише під цим рядком
+    if (val < 10 || val > 20) {
+        return "Outside";
+    }
+    // Змініть код лише над цим рядком
+    return "Inside";
+}
+testLogicalOr(15);
+//-----71---------------------------------------
+/** Об’єднайте команди if в єдину команду if/else.*/
+function testElse(val) {
+    let result = "";
+    // Змініть код лише під цим рядком
+    if (val > 5) {
+        result = "Bigger than 5";
+    } else {
+        return "5 or Smaller";
+    }
+    // Змініть код лише над цим рядком
+    return result;
+}
+testElse(4);
+//-----72---------------------------------------
+//Перетворіть оператори використовуючи команди else if.
+function testElseIf(val) {
+    if (val > 10) {
+      return "Greater than 10";
+    } else if (val <5) {
+   return "Smaller than 5";
+    } else {
+    return "Between 5 and 10";
+  }}
   
-  testLessOrEqual(10);
-  //-----69---------------------------------------
-/** */
+  testElseIf(7);
